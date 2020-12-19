@@ -1,7 +1,6 @@
-import React from 'react'
 import logo from './logo.svg';
 import './App.css';
-import JsonData from './data/JsonData.js'
+import PushList from "./data/PushList";
 
 function App() {
   return (
@@ -20,7 +19,7 @@ function App() {
           Learn React
         </a>
       </header>
-      <JsonData />
+      <PushList />
     </div>
   );
 }
