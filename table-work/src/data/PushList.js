@@ -1,6 +1,6 @@
 import React , {component} from "react";
 import JsonData from "./JsonData";
-import Fetch from "./Fetch";
+// import Fetch from "./Fetch";
 
 function PushList() {
   return (
@@ -15,7 +15,6 @@ function PushList() {
             )
         })}
       </div>
-      <Fetch />
     </div>
   );
 }
