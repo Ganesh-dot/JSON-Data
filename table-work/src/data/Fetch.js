@@ -15,14 +15,22 @@ class Fetch extends React.Component{
     }
 
     render() {
+
+        if(this.state.loading){
+          return <div>loading...</div>;
+        }
+
+        if(!this.state.person){
+            return <div>did not get a person</div>;
+          }
+
         return (
-            <div>
-                { this.state.loading || !this.state.person ? (
-                 <div> loading... </div> 
-                ) : ( 
-                 <div>{ this.state.person.name }</div>
-                 )}
-            </div>
+        <div> 
+              <div>{ this.state.person.name.title }</div>
+              <div>{ this.state.person.name.first }</div>
+              <div>{ this.state.person.name.last }</div>
+              <img src={ this.state.person.picture.large }></img>
+        </div>
         );
     }
 }

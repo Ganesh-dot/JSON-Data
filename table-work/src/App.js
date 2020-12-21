@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import PushList from "./data/PushList";
+import FetchAPI from "./data/FetchAPI";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           Learn React
         </a>
       </header>
+      <FetchAPI />
       <PushList />
     </div>
   );
